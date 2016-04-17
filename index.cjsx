@@ -9,7 +9,6 @@ awsS3Client = s3.createClient
     region: "us-west-2"
 
 
-console.log awsS3Client
 
 module.exports =
   name: 'Sync'
@@ -74,7 +73,7 @@ module.exports =
       uploader.on 'end', () ->
         window.log 'Done.'
 
-    
+
     render: ->
       <Grid>
         <Row>
